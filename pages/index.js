@@ -85,16 +85,14 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+           img {
+            margin-left: 0.5rem;
+          }
         }
 
         a {
@@ -102,21 +100,17 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
         .title {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+          a {
+            color: #0070f3;
+            text-decoration: none;
+            &:hover,&:focus,&:active {
+              text-decoration: underline;
+            }
+          }
         }
 
         .title,
@@ -143,7 +137,6 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -158,24 +151,22 @@ export default function Home() {
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
+          
+          h3 {
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+          }
+          
+          p {
+            margin: 0;
+            font-size: 1.25rem;
+            line-height: 1.5;
+          }
+          
+          &:hover,&:focus,&:active {
+            color: #0070f3;
+            border-color: #0070f3;
+          }
         }
 
         .logo {
